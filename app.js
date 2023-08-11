@@ -16,23 +16,27 @@ function division(a, b) {
     return a / b
 };
 
-function operate(num1, num2, sign){
-    switch (sign) {
-        case '+':
-            addition(num1, num2);
-            break;
-        case '-':
-            subtraction(num1, num2);
-            break;
-        case '*':
-            multiplication(num1, num2);
-            break;
-        case '/':
-            division(num1, num2);
-            break;
-    }
+function operate(num1, num2, operation) {
+    if (operation == '+') {
+        return addition(num1, num2);
+    };
+
+    if (operation == '-') {
+        return subtraction(num1, num2);
+    };
+
+    if (operation == '*') {
+        return multiplication(num1, num2);
+    };
+
+    if (operation == '/') {
+        return division(num1, num2);
+    };
 }
 
-let firstNum = 1;
-let secondNum = 1;
-let operator = '+';
+// operate(firstNum, secondNum, operator)
+
+
+
+
+
