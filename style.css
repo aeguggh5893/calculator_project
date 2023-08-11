@@ -1,3 +1,28 @@
-h1 {
-    color: red;
+div.case {
+    background-color: chartreuse;
+    width: 600px;
+    height: 600px;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
+body {
+    display: flex;
+    justify-content: center;
+    
+}
+
+button {
+    padding: 15px 32px;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: grey;
+    color: white;
+}
+
